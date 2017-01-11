@@ -1,0 +1,15 @@
+.col-2 {
+	float:left;
+	width: 50%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+span {
+	font-weight: bold;
+}
+
+button {
+	padding: 10px;
+	margin: 10px;
+}

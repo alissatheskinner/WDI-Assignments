@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Detective</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Welcome to the DOM Detective</h1>
+	<p>
+		We're going to use the <em>document</em> object and one of the following functions to find the required information
+		<pre>
+	// returns a single element
+	document.getElementById('some-id')
+	document.querySelector('some-selector')
+
+	// returns an array of elements
+	document.getElementsByTagName('some-tag')
+	document.getElementsByClassName('some-class')
+	document.querySelectorAll('some-selector')
+		</pre>
+	</p>
+	<h2>Section 1</h2>
+	<div class="col-2">
+		<h3 id="moogy">Part 1</h3>
+		<p>
+			console.log the following information: <br>
+			example: console.log('Number of zippy Elements: ' + #);
+		</p>
+		<ul>
+			<li>Find the number of elements that have a class of "zippy"</li>
+			<li>Find the number of elements that have a class of "zooopy"</li>
+			<li>Find the text of the element that has an id "tooomy"</li>
+			<li class="zippy">Find the text of the element that has an id "moogy"</li>
+			<li>Find the number of p elements</li>
+			<li>Find the number of h3 elements</li>
+			<li>Find the number of elements that have both classes "diggy" and "doggy"</li>
+		</ul>
+	</div>
+	<div class="col-2 zoopy">
+		<h3 class="diggy doggy">Part 2</h3>
+		<p class="zooopy">Fill in the text of the spans with the information from Part 1<br><br></p>
+		<ul class="zippy">
+			<li># of zippy class elements: <span id="zippyElements"></span></li>
+			<li># of zooopy class elements: <span id="zoopyElements"></span></li>
+			<li># of tooomy id text: <span id="tooomyText"></span></li>
+			<li># of moogy id text: <span id="moogyText"></span></li>
+			<li># of p elements: <span id="pElements"></span></li>
+			<li># of h3 elements: <span id="h3Elements"></span></li>
+			<li># of both diggy and doggy elements: <span id="diggyDoggyElements"></span></li>
+		</ul>
+	</div>
+	<hr>
+	<h2 class="zooopy">Section 2:</h2>
+	<div class="col-2">
+		<h3 class="zippy">Instructions</h3>
+		<ul>
+			<li>Fill in all elements with the class "place" with a place of your choosing</li>
+			<li>Fill in all elements with the class "adjective" with an adjective of your choosing</li>
+			<li>Fill in all elements with the class "ingVerb" with a 'ing' verb of your choosing</li>
+			<li>Fill in all elements with the class "famous" with a famous person of your choosing</li>
+			<li>Fill in all elements with the class "bestFriend" with your best friend</li>
+			<li>Fill in all elements with the class "pastTense" with a past tense verb</li>
+		</ul>
+	</div>
+	<div class="col-2 diggy doggy">
+		<h3 class="zooopy">Result: My Weirdest Dream</h3>
+		<p class="zippy zoopy">
+			I've been workin' in <span class="place"></span>,<br>
+			All the <span class="adjective"></span> day. <br>
+			I've been workin' in <span class="place"></span>,<br>
+			Just to pass the time away. <br>
+			Don't you hear the whistle <span class="ingVerb"></span>?<br>
+			Rise up so early in the morn. <br>
+			Don't you hear <span class="famous"></span> shouting<br>
+			“<span class="bestFriend"></span>, <span class="pastTense"></span> your horn? ”<br><br>
+
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span>,<br>
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span>,<br>
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span> your horn? <br>
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span>,<br>
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span>,<br>
+			<span class="bestFriend"></span>, won't you <span class="pastTense"></span> your horn?<br><br>
+
+			Someone's in the basement with <span class="bestFriend"></span>.<br>
+			Someone's in the basement, I know. <br>
+			Someone's in the basement with <span class="bestFriend"></span><br>
+			Strumming on the old saxophone.<br>
+
+			<div id="tooomy">It was the weirdest dream I've had in a long time!</div><br>
+		</p>
+	</div>
+
+	<hr>
+	<h2>Section 3:</h2>
+	<div class="col-2">
+		<h3>Instructions</h3>
+		<p>Click the rap artist button below to reveal a <em>real</em> quote by that person.  The quotes should be appended to a running list every time a button is clicked.</p>
+		<ul>
+			<li>If 'Nas' is clicked add the quote: “If you’re scared to take chances, you’ll never have the answers.”</li>
+			<li>If 'Biggie' is clicked add the quote: “Damn right I like the life I live, cause I went from negative to positive.”</li>
+			<li>If 'Jay-Z' is clicked add the quote: “Remind yourself, nobody’s built like you. You design yourself.”</li>
+			<li>If '50 Cent' is clicked add the quote: “I love you like a fat kid loves cake.”</li>
+		</ul>
+		<div class="col-2">
+			<button id="nas">Nas</button>
+			<button id="biggie">Biggie</button>
+		</div>
+		<div class="col-2">
+			<button id="jayZ">Jay-Z</button>
+			<button id="fiftyCent">50 Cent</button>
+		</div>		
+	</div>
+	<div class="col-2">
+		<h3 class="zippy">Quotes:</h3>
+		<span id="famousQuote"></span>
+	</div>
+	<script type="text/javascript" src="section1.js"></script>
+	<script type="text/javascript" src="section2.js"></script>
+	<script type="text/javascript" src="section3.js"></script>
+</body>
+</html>
