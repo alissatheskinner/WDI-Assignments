@@ -3,8 +3,6 @@ $(document).ready(function (){
 //Use the OMDB api to create a quick movie search app
 
 
-//create a workable search bar (hint: `.keyup()` and `.val()`)
-
 	$('#searchInput').keyup(function() {
 		
 		var userText = $('input[name="search"]').val();
