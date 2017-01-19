@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Juke Box</title>
+	<link rel="stylesheet" type="text/css" href="jukebox.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+	<header>
+		<h1>Listen Up.</h1>
+	</header>
+<hr>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="jukebox_container">
+			    		<div id="juke_box">
+			      			<audio id="music" src="Dancing Choose.m4a"/></audio>
+
+			      			<button id="previousButton"><span class="glyphicon glyphicon-step-backward"></span></button>
+							<button id="playButton"><span class="glyphicon glyphicon-play"></span></button>
+							<button id="pauseButton"><span class="glyphicon glyphicon-pause"></span></button>
+							<button id="nextButton"><span class="glyphicon glyphicon-step-forward"></span> </button>
+							<br>
+							<progress id="seekbar" value="0" max="duration" style="width: 75%;"></progress>
+
+			      			<div><p class="songInfo"></p></div>
+			    
+			  			</div>
+					</div>  
+				</div>
+			</div>	
+		</div>
+
+		<script type="text/javascript" src="jukebox.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
