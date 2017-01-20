@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+	<title>Daily Horoscope</title>
+</head>
+	<body>
+
+	<nav class="menu">
+		
+	</nav>
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-xl-1">
+				<div class="jumbotron jumbotron-fluid">
+			  		<span><h1 class="display-3">Zodiac Horoscope</h1></span>
+			  		<p class="lead">The concept of the zodiac originated in Babylonian astrology, and was later influenced by Hellenistic culture. According to astrology, celestial phenomena relate to human activity on the principle of "as above, so below", so that the signs are held to represent characteristic modes of expression.</p>
+			  		<hr class="my-4">
+			  		<p>However, as the dawn of the 20th Century opened with political instability and widespread fear, many affluent Americans have turned to "The Universe" in an effort to avoid vulnerable feelings of uncertaintity plaguing their inner lives in the face of globalization and rapid technological advancement. Click below to learn more about our place in the Universe.</p>
+			  		<p class="lead">
+			    	<a id="wikiLink" class="btn btn-primary btn-lg" href="http://scaleofuniverse.com/" role="button" link >Your Place in the Universe</a>
+			  		</p>
+				</div>
+			</div>	
+		</div>	
+
+
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="zodiacButtons">
+						<div><button id="aquarius" type="button" class="btn-group-vertical" role="group">Aquarius<br>JANUARY 20 - FEBRUARY 18</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Pisces<br>FEBRUARY 19 - MARCH 20</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Aries<br>MARCH 21 - APRIL 19</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Taurus<br>APRIL 20 - MAY 20</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Gemini<br>MAY 21 - JUNE 20</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Cancer<br>JUNE 21 - JULY 22</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Leo<br>JULY 23 - AUGUST 22</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Virgo<br>AUGUST 23 - SEPTEMBER 22</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Libra<br>SEPTEMBER 23 - OCTOBER 22</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Scorpio<br>OCTOBER 23 - NOVEMBER 21</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Sagittarius<br>NOVEMBER 22 - DECEMBER 21</button></div>
+						<div><button type="button" class="btn-group-vertical" role="group">Capricorn<br>DECEMBER 22 - JANUARY 19</button></div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<h2>Your Zodiak Sign<small> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+						<a class="btn btn-primary btn-sm" href="#" role="button">Today's Horoscope</a></h2>
+
+
+				<hr>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="thumbnail">
+									<h5 id="celebrityName">Actor Name</h5> 
+									<img id="celebImage" src="https://pbs.twimg.com/profile_images/680051184628011010/j7btF2wo.jpg"/>
+										
+										<h2>Celebrity Signs<br></h2>
+										<p>Who do you share your sign with? Find out which celebrities share your zodiac.</p>
+										<p><a class="btn btn-primary btn-sm" href="#" role="button">Celebrity Signs</a></p>
+							</div>
+						</div>
+							
+						<div class="col-md-6">
+							<div class="thumbnail">
+								<h2>Sign Compatibility<br></h2>
+									<img id="astroWheel" src="https://cafeastrology.com/wp-content/uploads/2015/04/rulersclassical.png"/>
+									
+									<p>If you believe "The Universe" cares about you, an ant of a human, then you better check and see if "zodiac-ly" speaking you are with the right person.</p>
+									<form>
+										<select id="sign1">
+											<option selected="selected" value="aries">Aries</option>
+											<option value="taurus">Taurus</option>
+											<option value="gemini">Gemini</option>
+											<option value="cancer">Cancer</option>
+											<option value="leo">Leo</option>
+											<option value="virgo">Virgo</option>
+											<option value="libra">Libra</option>
+											<option value="scorpio">Scorpio</option>
+											<option value="sagittarius">Sagittarius</option>
+											<option value="capricorn">Capricorn</option>
+											<option value="aquarius">Aquarius</option>
+											<option value="pisces">Pisces</option>
+										</select>
+										+
+										
+										<select id="sign2">
+											<option value="aries">Aries</option>
+											<option selected="selected" value="taurus">Taurus</option>
+											<option value="gemini">Gemini</option>
+											<option value="cancer">Cancer</option>
+											<option value="leo">Leo</option>
+											<option value="virgo">Virgo</option>
+											<option value="libra">Libra</option>
+											<option value="scorpio">Scorpio</option>
+											<option value="sagittarius">Sagittarius</option>
+											<option value="capricorn">Capricorn</option>
+											<option value="aquarius">Aquarius</option>
+											<option value="pisces">Pisces</option>
+										</select>
+										<button type="submit">Match</button>
+									</form>
+
+									<!-- <p><a class="btn btn-primary btn-sm" href="#" role="button">Check Compatibility</a></p> -->
+								
+							</div>	
+						</div>
+					
+
+					</div>
+
+
+
+
+		</div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

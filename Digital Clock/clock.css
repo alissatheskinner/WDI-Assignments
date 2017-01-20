@@ -1,0 +1,68 @@
+.backgroundImages img {
+	position: fixed;
+	top: 0; 
+	left: 0; 
+	min-height: 100%;
+	min-width: 100%; 
+}	
+
+/*img #goodAfternoon {
+	position: fixed;
+	top: 0; 
+	left: 0; 
+	min-height: 100%;
+	min-width: 100%;
+}	
+
+img #goodEvening {
+	position: fixed;
+	top: 0; 
+	left: 0; 
+	min-height: 100%;
+	min-width: 100%;
+}	
+
+
+.backgroundImages{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+*/
+
+#clockFull {
+	position: absolute;
+	top: 0;
+	left: 0; 
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+
+}
+
+#clockBox {
+	display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+	margin:0 auto;
+	width: 300px;
+	height: 200px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+#clockInside {
+	background-color: rgba(0, 0, 0, .0);
+	font-family: 'Arvo' bold;
+	font-weight: 50px;
+	font-size: 24pt;
+}
+
+#greetingMessage {
+	padding-bottom: 20px;
+}
+
+	
