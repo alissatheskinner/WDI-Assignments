@@ -1,21 +1,35 @@
-.zodiacButtons {
+.menu {
+	background-color: black;
+}
+
+.jumbotron {
 	
 }
 
-#aquarius {
-	background-color: red;
+#guts{
+	font-size: 14pt;
+	
 }
 
-#image {
+img#celebImage {
+	border: solid black 2px;
 	height: 200px;
 	width: 200px;
 }
 
-#astroWheel {
+#aquarius {
+	/*background-image: url('http://www.horoscope.com/images-US/signs/1.svg');*/
 
 }
 
-a #wikiLink {
-/*<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/6eqCaiwmr_M" 
-frameborder="0" allowfullscreen></iframe>}*/
+/*#image {
+	height: 200px;
+	width: 200px;
+}*/
+
+#astroWheel {
+	height: 200px;
+	width: 200px;
+
+}
+
