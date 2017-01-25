@@ -1,3 +1,8 @@
+// $default-aqua = 1CCCB5;
+// $default-mint = 70FFED;
+// $default-darkturqoise = 127F71;
+
+
 .menu {
 	background-color: black;
 }
@@ -8,7 +13,6 @@
 
 #guts{
 	font-size: 14pt;
-	
 }
 
 img#celebImage {
@@ -17,15 +21,7 @@ img#celebImage {
 	width: 200px;
 }
 
-#aquarius {
-	/*background-image: url('http://www.horoscope.com/images-US/signs/1.svg');*/
 
-}
-
-/*#image {
-	height: 200px;
-	width: 200px;
-}*/
 
 #astroWheel {
 	height: 200px;

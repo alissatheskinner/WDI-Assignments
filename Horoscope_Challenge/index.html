@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 	<title>Daily Horoscope</title>
 </head>
 	<body>
-
-	<nav class="menu">
-			<button type="button" class="btn btn-link btn-lg" href="https://www.youtube.com/watch?v=4PN5JJDh78I">Pale Blue Dot</button>
-			<button type="button" class="btn btn-link active">Home</button>
-			<button type="button" class="btn btn-link btn-sm">Link</button>
-			<button type="button" class="btn btn-link btn-sm">Link</button>
-		
-	</nav>
 
 	<div class="container-fluid">
 
@@ -25,11 +17,6 @@
 			  		<span><h1 class="display-3">Zodiac Horoscope</h1></span>
 			  		<p class="lead">The concept of the zodiac originated in Babylonian astrology, and was later influenced by Hellenistic culture. According to astrology, celestial phenomena relate to human activity on the principle of "as above, so below"; by analyzing the projection of the position of planets, and the Sun and the Moon on the Ecliptic at the moment of birth, Astrology is thought to give us a glimpse of a person's basic characteristics, preferences, flaws and fears.</p>
 			  		<hr>
-
-			  		<!-- <p>However, as the dawn of the 20th Century opened with political instability and widespread fear, many affluent Americans have turned to "The Universe" in an effort to avoid vulnerable feelings of uncertaintity plaguing their inner lives in the face of globalization and rapid technological advancement. Click below to learn more about our place in the Universe.</p>
-			  		<p class="lead">
-			    	<a id="wikiLink" class="btn btn-primary btn-lg" href="http://scaleofuniverse.com/" role="button" link >Your Place in the Universe</a>
-			  		</p> -->
 				</div>
 			</div>	
 		</div>
@@ -89,19 +76,20 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-4">
 				<div class="thumbnail">
 					<img id="zChart" src="bw_zodiac_table.png" href="https://www.vplates.com.au/uploads/images/Zodiac/Zodiac-signs-table-updated-April-2015.png">	
 				</div>
 			</div>
-			<div class="col-md-6"></div>
+			
+			<div class="col-md-6 col-sm-4">
 				<div class="thumbnail">
 					<h2>Sign Compatibility</h2>
-			<br>
+					<br>
 					<img id="astroWheel" src="https://cafeastrology.com/wp-content/uploads/2015/04/rulersclassical.png"/>
-			<br>
+					<br>
 					<p id="yourMatch">If you feel like it's a possibility that "The Universe" is conscious and know's you are conscious, check your compatibility with another person by first selecting your Zodiac sign, and then choosing the Zodiac sign you'd like to compare. </p>
-			<br>
+					<br>
 
 				<form>
 					<select id="sign1">
@@ -134,12 +122,13 @@
 						<option value="aquarius">Aquarius</option>
 						<option value="pisces">Pisces</option>
 					</select>
-					<button id=matchButton type="button" class="btn btn-default btn-md">
+						<button id=matchButton type="button" class="btn btn-default btn-md">
 						  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Match
 						</button>
 				</form>
 				</div>
 			</div>
+		</div>
 	</div>	
 		
 		<script type="text/javascript" src="script.js"></script>

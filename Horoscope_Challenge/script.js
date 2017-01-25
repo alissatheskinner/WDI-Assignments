@@ -8,6 +8,9 @@ $(document).ready(function(){
           	
           	$('#celebrityName').html(response.actors[0].name);
           	$('#celebImage').attr("src", response.actors[0].imageUrl);
+          },
+          error: function(error){
+
           }
          
 	   })
@@ -21,6 +24,9 @@ $(document).ready(function(){
 				$('#yourSign').text(response.sign);
 				$('#guts p').text(response.horoscope);
 				
+			},
+			error: function(error){
+
 			}
 			
         })
@@ -33,8 +39,10 @@ $(document).ready(function(){
 			url: 'https://node-horoscopes.herokuapp.com/api/horoscopes/dating/' + fromSign + "/" + toSign,
 			success: function(response) {
 				
-				// $('#sign1, #sign2').change(response.text);
 				$('#yourMatch').text(response.text);
+				
+			},
+			error: function(error){
 				
 			}
 		})
