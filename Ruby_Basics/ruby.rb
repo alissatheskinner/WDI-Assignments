@@ -1,7 +1,7 @@
 # * Create a function that takes a string as an argument and adds the phrase "Only in America!" to the end of it
 
 def my_function(n)
-  n + "#{'Only in America!'}"
+  n + "Only in America!"
 end
 puts  my_function("Trump as President. ")
 
@@ -11,15 +11,21 @@ puts  my_function("Trump as President. ")
 #     `[100,10,-1000]`
 #     should return 100. **Do not use Ruby's built-in `.max` function.**
 
-numArray = [100, 10, -1000]
+numArray = [100, 10, 200, -1000]
 
-def max_value(numArray)
-  numArray.each do |number|
+def max_value(myArray)
+  max = 0; 
+  myArray.each do |number|
+    if number > max
+      max = number 
+    end
+  end
+
+  return max 
+
 end
 
-max_value.numArray[0]
-
-end
+p result = max_value(numArray);
 
 
 
@@ -29,13 +35,17 @@ end
 # For example, when these two arrays are supplied as arguments:
 
 
-def two_arguments(make,model)
-  make = [:hyundai, :ford]
-  model = ["Accent", "Focus"]
+def two_arguments(keys, values)
+  dictionary = {}
 
-return "#{:make[0] + :model[0]}"
-return "#{:make[1] + :model[1]}"
+  for i in 0..keys.length - 1
+    dictionary[keys[i]] = values[i]
+  end
+
+  return dictionary
 end
+
+two_arguments( [:hyundai, :ford], ["Accent", "Focus"])
 
 # * Create a function that prints the numbers from 1 to 100, except:
   
@@ -46,22 +56,20 @@ end
 def fizz_buzz()
   
   for i in 0..100
-    puts i
-  end 
-  
-  if i % 3 == 0 
-    puts "Fizz" 
-  end
-      
-  elsif i % 5 == 0 
-    puts "Buzz" 
-  end
-    
-  elsif i % 5 == 0 && i % 3 == 0 
-   puts "FizzBuzz"
-  end
-  
-end
 
+    if i % 5 == 0 && i % 3 == 0 
+      puts "FizzBuzz"
+
+    elsif i % 3 == 0 
+      puts "Fizz" 
+    elsif i % 5 == 0 
+      puts "Buzz" 
+
+    else 
+      puts i 
+    end
+  end
+end
+fizz_buzz()
 
 
