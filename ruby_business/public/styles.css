@@ -1,0 +1,22 @@
+body {
+	background-color: #2CBAE7;
+	
+}
+
+#home_content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#pickMe {
+	font-size: 14pt;
+}
+
+.btnbtn-link {
+	font: white;
+}
+
+#header {
+	color: white;
+}

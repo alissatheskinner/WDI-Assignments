@@ -1,0 +1,37 @@
+<div class="container" id="header">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<ul class="list-inline">
+			    <li><a type="button" class="btn btn-default navbar-btn active" href="/home">Home</a></li>
+			    <li><a type="button" class="btn btn-default navbar-btn active" href="/contact">More About Us</a></li>			    <li><a type="button" class="btn btn-default navbar-btn active" href="/image_gallery">Mission Timeline</a></li>
+			</ul>	
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+
+<hr>
+<h1>Me! Me! Pick Me!</h1>
+<br>
+<p id="pickMe">Fill out this form letting us know who you are and that you are interested in starting the process of application to be among the first human immigrants on this most Excellent Adventure to Mars.</p>
+
+	<div class="row">
+		<div class= "col-md-offset-2 col-md-8 col-md-offset-2">
+
+			<form method="POST" action="/user-info"> 
+			  <div class="form-group">
+			    <label for="exampleInputFname">First Name</label>
+			    <input name="f_name" type="text" class="form-control" id="exampleInputFname" placeholder="First Name">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputLname">Last Name</label>
+			    <input name="l_name" type="text" class="form-control" id="exampleInputLname" placeholder="Last Name">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email address</label>
+			    <input name="u_email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
