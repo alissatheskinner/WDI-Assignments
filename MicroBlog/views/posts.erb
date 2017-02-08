@@ -1,0 +1,69 @@
+<header>
+	<span><h1> Your Posts</h1>
+		<ul class="list-inline">
+			 <li><a type="button" class="btn btn-link" active" href="/">Home</a></li>
+			<li><a type="button" class="btn btn-link" active" href="/profile">Back to Profile</a></li>
+		</ul>
+	</span>
+</header>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+<!--     <link href="css/blog-post.css" rel="stylesheet">
+     <link href="css/youtube.css" rel="stylesheet">
+	 <link href="css/books.css" rel="stylesheet"> -->
+	
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+
+                <!-- the actual blog post: title/author/date/content -->
+                <h1><a href="">All Posts</a></h1>
+                <p class="lead"><i class="fa fa-user"></i> by <a href="">User</a>
+                </p>
+                <hr>
+                 <div class="well">
+                    <h4><i class="fa fa-paper-plane-o"></i> Post:</h4>
+
+                    <form method="post" action='/posts'>
+                        <textarea id="my_post" type="text" name="content" rows="3" maxlength="150"></textarea>
+                        <input type="submit">
+                    </form>
+                </div>
+				
+                <hr>
+               <!--  <img src="http://placehold.it/900x300" class="img-responsive"> -->
+                <hr>
+                <div id="blog_post">
+	                <p class="lead">This is my blog post. Isn't it great? Read everything right now and don't skip anything.</p>
+	                <p>  </p>
+	                <br/>
+	            </div>				
+                <hr>
+            </div>
+        </div> 
+      <script type="text/javascript" src="script.js"></script>         
+<script src="https://apis.google.com/js/plusone.js"></script>
+
+
+
+
+

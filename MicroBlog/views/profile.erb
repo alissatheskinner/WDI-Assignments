@@ -1,0 +1,77 @@
+<style>
+  body{
+  	   background-image: url("/images/plaid.geometric.jpg");
+       color:white;
+  }
+</style>
+
+<header>
+	<h1 id="welcome_name">Welcome, <%=@user.f_name if @user %></h1>
+		<div class="layout_content">
+    <% if session[:user_id] %>
+          <ul id="nav">
+            <li class="list">
+              <a href="/">
+                Logout
+              </a>
+            </li>
+            <li class="list">
+              <a href="/posts">
+                Post
+              </a>
+            </li>
+ 
+            <li class="list">
+              <a href="/home">
+                Home
+              </a>
+            </li>
+          </ul>
+    <% end %>
+</div>
+</header>
+<br>
+<hr>
+<div id="about_me">
+	
+<h4>About ME: </h4> 
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+
+<div id="homepage_content">
+	<span class="homepage_subheader">Create a new post!</span>
+	<div id="homepage_login">
+		<form action="/posts" method="POST">
+		  <label for="content" class="formlabel">Do tell...</label>
+		  <textarea rows="4" cols="75" name="content"  class="field" maxlength="150">Enter text here</textarea>	
+		  <div class="submit">
+		         <input type="submit" value="Submit" id="signin_submit"/>
+          </div>
+		</form>
+    </div>
+</div>
+
+<div id="posts">
+	    <h1 class="all_posts">
+	       Your Posts
+	    </h1>
+
+		<% Post.all.each do |post|%>
+		    <hr color="grey">
+			<div class="post_f_name">
+			   @<%=post.user.f_name + post.user.l_name %>
+			</div> 
+			<div class="post_content"> 
+			   <%= post.content %>
+			</div>
+			<br>
+		<% end %>	
+<div>
+
