@@ -1,0 +1,59 @@
+<!-- <h1>Users#show</h1> -->
+<style>
+  body{
+  	   background-image: url("/images/plaid.geometric.jpg");
+       color:white;
+  }
+</style>
+
+<header>
+	<h1 id="welcome_name">Welcome, <%=@user.first_name if @user %></h1>
+		
+</header>
+<br>
+<hr>
+
+<div id="about_me">
+
+	<div class="profile_stats">
+		Name: <%= @user.first_name %> 
+			  <%= @user.last_name %><br>
+		Email: <%= @user.email %><br>
+			<% if @user == @current_user %>
+				<%= link_to 'Edit', edit_user_path(@user) %>   
+				<%= link_to 'Delete', @user, method: :delete %>
+			<% end %>
+	</div>
+</div>
+
+
+	<div id="homepage_content">
+		<span class="homepage_subheader">Create a new post.</span>
+			<div id="homepage_login">
+				<%= form_for(@post) do |f| %>
+			  		<%= f.label :content, 'Do tell...' %><br>
+			  		<%= f.text_area :content, size: "50x15" %>
+				  	<%= f.submit %>
+	    	</div>
+	    	<% end %>
+	</div>
+
+	<div id="posts">
+	    <h1 class="all_posts">Posts</h1>
+		<% @user.posts.each do |post|%>
+<hr>
+		<div class="post_content"> 
+			<%= @post.content %>
+		</div>
+<br>
+		<p>
+			<%= link_to "Back", posts_path %>
+			<%= link_to "Edit", edit_post_path(@user)  %>
+			<%= link_to "Delete", @post, method: :delete %>
+		<% end %>	
+		</p>
+			<%= form_for(@comment) do |f| %>
+			<%= f.text_area :content, size: "60x4" %><br>
+			<%= f.submit %>
+				<% end %>
+

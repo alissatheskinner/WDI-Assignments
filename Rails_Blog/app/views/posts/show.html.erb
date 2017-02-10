@@ -1,0 +1,45 @@
+<h1><%= Blog on...%></h1>
+
+<%= @post.content %>
+
+<p>
+<%= link_to "Back", posts_path %>
+
+<%= link_to "Edit", edit_post_path(@post) %>
+
+<%= link_to "Delete", @post, :method => :delete, :confirm => "Are you sure?" %>
+</p>
+
+<div id="homepage_content">
+		<span class="homepage_subheader">Create a new post!</span>
+			<div id="homepage_login">
+				<%= form_for @post do |f| %>
+			  		<%= f.label :content, 'Do tell...' %><br>
+			  		<%= f.text_area :content %>
+				  	<%= f.submit %>
+				 <% end %>
+	    	</div>
+	</div>
+
+	<div id="posts">
+	    <h1 class="all_posts">
+	       Your Posts
+	    </h1>
+
+		<% @user.posts.each do |post|%>
+		    <hr color="grey">
+			<div class="post_first_name">
+			   by <%=post.user.first_name + " " + post.user.last_name %>
+			</div> 
+			<div class="post_content"> 
+			   <%= post.content %>
+			</div>
+			<br>
+			<p>
+		<%= link_to "Back", posts_path %>
+		
+			</p>
+		<% end %>	
+	<div>
+
+

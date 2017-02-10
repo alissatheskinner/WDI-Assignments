@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bumblr</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<style>
+  body{
+       background-color: gray;
+       color:white;
+  }
+</style>
+  <header class="default_header">
+      <div >
+        <h4> Bumblr!</h4>
+        <%= link_to 'All Users', users_path %>
+        <%= link_to 'Home', root_path %>
+        <%= link_to 'Log In', sessions_new_path %>
+        <%= link_to 'Log Out', sessions_destroy_path, method: :delete %>
+        <%= link_to 'Sign Up', new_user_path %>
+      </div>
+  </header>
+  <hr>
+
+  <body>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+
+  <hr>
+    <%= flash[:notice] if flash[:notice] %>
+    <%= flash[:alert] if flash[:alert] %>
+    <hr>
+    <%= yield %>
+    </div>
+  </div>
+  </body>
+  
+   
+  
+</html>

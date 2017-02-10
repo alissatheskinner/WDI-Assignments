@@ -1,0 +1,9 @@
+<h1>Check out other people on Bumblr!</h1>
+
+<% @users.each do |user| %>
+	<div>
+		<%= user.first_name %>
+		<%= user.last_name %>
+		<%= link_to 'See More', user %>
+	</div>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Read on...</h1>
+
+<% @posts.each do |post| %>
+	<h2><%=%></h2>
+	<p>
+	<%= post.content %>
+	by <%= post.user.first_name %>
+	<%= post.user.last_name %>
+	</p>
+<% end %>
