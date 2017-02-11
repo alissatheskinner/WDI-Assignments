@@ -1,0 +1,8 @@
+<form class=fix_posts method="post" action="/edit_post" class="field">
+	<textarea id="new_post" rows="4" cols="75" type="text" name="content" maxlength="150"><%=@post.content%></textarea>
+	<input type="hidden" name="post_id" value="<%=@post.id%>">
+	<input type="submit" value="Submit">
+</form>
+
+
+

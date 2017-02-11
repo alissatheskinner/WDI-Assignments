@@ -36,7 +36,6 @@ get '/login' do
 end 
 
 get '/logout' do
-	session.clear
 	session[:user_id] = nil
   	redirect '/'
 end 
@@ -50,6 +49,30 @@ get '/posts' do
 	erb :posts
 end
 
+get '/edit_post' do 
+	current_user
+	@post = Post.find(params[:post_id])
+	erb :edit_post
+end	
+
+post '/edit_post' do
+	current_user
+    @post = Post.find(params[:post_id])
+    if @post.update(content: params[:content])
+    flash[:notice] = "Post has been edited."	
+      redirect '/profile'
+    end
+end
+
+get '/delete_post' do
+	current_user
+    @post = Post.find(params[:post_id])
+    if @post.destroy
+      flash[:notice] = "Post deleted."
+      redirect '/profile'
+    end
+end
+
 
 
 
@@ -60,9 +83,7 @@ post '/signup' do
 	@user = User.new(params[:user])
 	@user.save 
 	session[:user_id] = @user.id
-	redirect '/profile'
-	
-		
+	redirect '/profile'		
 end
 
 
@@ -79,19 +100,14 @@ post '/login' do
 	end
 end
 
-post '/posts' do
-	@ usePost.create(content:params[:content], user_id: current_user.id)
+post '/posts' do	
+	@post = current_user.posts.new(content: params[:content])
+	@post.save
 	redirect '/profile'
-	# @post = current_user.posts.new(content: params[:content])
-	# @post.save
-	# redirect '/posts'
 end
 
-# post '/newposts' do 
-# 	@post = Post.new(params[:post])
-# 	redirect '/posts'
-# end
-	
+
+
 
 
 
