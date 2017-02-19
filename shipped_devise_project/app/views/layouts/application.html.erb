@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShippedDeviseProject</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+<!--   <header><p>This is my header. LOGO.  COMPANY NAME</p></header>
+  <hr> -->
+  <nav class="navbar navbar-inverse">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Team Members</a></li>
+      <li><a href="">Our Boats</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <body>
+	  <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>  
+    <%= yield %>
+  </body>
+  <footer><%= link_to 'Back', user_path %></footer>
+</html>

@@ -1,0 +1,25 @@
+<%= form_for @boat , :url => boats_path, :html => { :multipart => true } do |f| %>
+	
+	<div class="field">
+		<%= f.label :name_of_boat %>
+		<%= f.text_field :name_of_boat %><br>
+	</div>
+
+	<div class="field">
+		<%= f.label :container_capacity %>
+		<%= f.text_field :container_capacity %><br>
+	</div>
+
+	<div class="field">	
+		<%= f.label :location %>
+		<%= f.text_field :location%><br>
+	</div>
+
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+
+	<div class="field">
+		<%= f.file_field :avatar %>
+	</div>
+<% end %>

@@ -1,0 +1,7 @@
+Boat Id: <%= boat.boat_id %><br>
+Job Id: <%= job.job_id %><br>
+<%= options_for_select(['The Jakey', 1], ['The Julian', 2], ['The Siddy', 3]) %>
+
+<%= link_to 'Edit', edit_boat_path(boat) %> |
+<%= link_to 'Delete', boat, method: :delete %>
+<hr>

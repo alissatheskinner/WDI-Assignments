@@ -1,0 +1,8 @@
+Boat Name: <%= boat.name_of_boat %><br>
+Container Capacity: <%= boat.container_capacity %><br>
+Boat Location: <%= boat.location %><br>
+<%= image_tag boat.avatar.url %>
+<%= link_to 'Edit', edit_boat_path(boat) %> |
+<%= link_to 'Delete', boat, method: :delete %>
+<hr>
+

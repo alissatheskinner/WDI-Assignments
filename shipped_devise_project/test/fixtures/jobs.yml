@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_description: MyString
+  origin: MyString
+  desination: MyString
+  containers_needed: MyString
+
+two:
+  job_description: MyString
+  origin: MyString
+  desination: MyString
+  containers_needed: MyString

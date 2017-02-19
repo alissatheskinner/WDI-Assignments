@@ -1,0 +1,22 @@
+<%= form_for @job do |f| %>
+
+	<%= f.label :job_name %>
+	<%= f.text_field :job_name %>
+	
+	<%= f.label :job_description %>
+	<%= f.text_field :job_description %>
+
+	<%= f.label :origin %>
+	<%= f.text_field :origin %>
+
+	<%= f.label :destination %>
+	<%= f.text_field :destination %>
+
+	<%= f.label :conatiners_needed %>
+	<%= f.text_field :containers_needed %>
+
+	<%= f.label :cost %>
+	<%= f.text_field :cost %>
+	<%= f.submit %>
+	
+<% end %>

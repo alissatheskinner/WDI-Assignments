@@ -1,0 +1,23 @@
+<h1>Users#show</h1>
+
+<hr>
+<%= link_to "Register New Boat", new_boat_path %><br>
+<h3>Available Boats</h3><br>
+<% @boats.each do |boat| %>
+	<%= render boat, boat: boat %>
+<% end %>
+<hr>
+<%= link_to "Post New Job", new_job_path %><br>
+<h3>Available Jobs</h3><br>
+<% @jobs.each do |job| %>
+	<%= render job, job: job %> 
+<% end %>
+<hr>
+<h3>Assigned Boats --> Jobs</h3><br>
+	
+<hr>
+
+
+
+
+

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_of_boat: MyString
+  container_capacity: 1
+  location: MyString
+  user: one
+
+two:
+  name_of_boat: MyString
+  container_capacity: 1
+  location: MyString
+  user: two
